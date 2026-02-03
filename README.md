@@ -1,8 +1,45 @@
-# React + Vite
+# Blog (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React + Vite app that uses Appwrite, Redux Toolkit, React Router, and Tailwind CSS.
+Use the instructions below to configure your environment and start the dev server.
 
-Currently, two official plugins are available:
+## Requirements
+
+- Node.js 18+ (or a recent LTS)
+- npm (or your preferred package manager)
+
+## Setup
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Create a `.env` file in the project root using the template below:
+   ```bash
+   cp .env.example .env
+   ```
+3. Update the Appwrite values in `.env` to match your project.
+
+## Scripts
+
+- `npm run dev` - start the development server
+- `npm run build` - build for production
+- `npm run preview` - preview the production build
+- `npm run lint` - run ESLint
+
+## Appwrite Environment Variables
+
+The app expects the following Vite environment variables:
+
+- `VITE_APPWRITE_URL`
+- `VITE_APPWRITE_PROJECT_ID`
+- `VITE_APPWRITE_DATABASE_ID`
+- `VITE_APPWRITE_COLLECTION_ID`
+- `VITE_APPWRITE_BUCKET_ID`
+
+## Notes
+
+This project started from the Vite React template, which includes:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
